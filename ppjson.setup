@@ -1,0 +1,4 @@
+;; -*- scheme -*-
+(compile -O3 -d0 -s ppjson.scm -J)
+(compile -O3 -d0 -s ppjson.import.scm)
+(install-extension 'ppjson '("ppjson.so" "ppjson.import.so"))
